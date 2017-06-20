@@ -132,3 +132,96 @@ CREATE TABLE [jv_defines_cols_u] (
 
 
 
+
+
+
+INSERT jv_define(id, pid, iIndex, iType, cCaption, bEnabled, dDate, cCustomTpl, cRightNode, cMemo, cJson)
+  VALUES('10', '1', '1', '', 'setting', 'True', '2011-06-18 15:12:14', '', '', '', '');
+INSERT jv_define(id, pid, iIndex, iType, cCaption, bEnabled, dDate, cCustomTpl, cRightNode, cMemo, cJson)
+  VALUES('11', '1', '2', '', 'profile', 'True', '2011-06-18 15:12:14', '', '', '', '');
+INSERT jv_define(id, pid, iIndex, iType, cCaption, bEnabled, dDate, cCustomTpl, cRightNode, cMemo, cJson)
+  VALUES('12', '1', '3', '', 'Purchasing', 'True', '2011-06-18 15:12:14', '', '', '', '');
+INSERT jv_define(id, pid, iIndex, iType, cCaption, bEnabled, dDate, cCustomTpl, cRightNode, cMemo, cJson)
+  VALUES('13', '1', '4', '', 'Sales', 'True', '2011-06-18 15:12:14', '', '', '', '');
+INSERT jv_define(id, pid, iIndex, iType, cCaption, bEnabled, dDate, cCustomTpl, cRightNode, cMemo, cJson)
+  VALUES('14', '1', '5', '', 'Inventory', 'True', '2011-06-18 15:12:14', '', '', '', '');
+INSERT jv_define(id, pid, iIndex, iType, cCaption, bEnabled, dDate, cCustomTpl, cRightNode, cMemo, cJson)
+  VALUES('1001', '10', '1', '1', 'Define forms', 'True', '2017-06-16 15:16:07', '', '', '', '');
+INSERT jv_define(id, pid, iIndex, iType, cCaption, bEnabled, dDate, cCustomTpl, cRightNode, cMemo, cJson)
+  VALUES('1002', '10', '2', '2', 'Define tables', 'True', '2017-06-16 15:46:27', '', '', '', '');
+INSERT jv_define(id, pid, iIndex, iType, cCaption, bEnabled, dDate, cCustomTpl, cRightNode, cMemo, cJson)
+
+
+INSERT jv_defines(tid, id, cDescription, cView, cTable, iIndex, iWidth, iHeight, iLeft, iTop, bEanbled, cTabJson)
+  VALUES('1', '1001', 'Form define', 'v_jv_define', 'jv_define', '1', '', '', '', '', '', '{"tabKey":"id", "mainTabKey":"", "foreignKey":""}');
+INSERT jv_defines(tid, id, cDescription, cView, cTable, iIndex, iWidth, iHeight, iLeft, iTop, bEanbled, cTabJson)
+  VALUES('2', '1001', 'Form define', 'v_jv_defines', 'jv_defines', '2', '', '', '', '', '', '{"tabKey":"tid", "mainTabKey":"id", "foreignKey":"id"}');
+INSERT jv_defines(tid, id, cDescription, cView, cTable, iIndex, iWidth, iHeight, iLeft, iTop, bEanbled, cTabJson)
+  VALUES('3', '1001', 'Form cols define', 'v_jv_defines_cols', 'jv_defines_cols', '3', '', '', '', '', '', '{"tabKey":"AutoID", "mainTabKey":"id", "foreignKey":"id"}');
+
+
+
+
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('1', 'id', 'id', '', '1', '0', '0', '0', '0', 'True', 'True', '2017-06-16 17:11:31', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('1', 'iIndex', 'Index', '', '2', '0', '0', '0', '0', 'True', 'True', '2017-06-16 17:11:51', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('1', 'iType', 'Form type', '', '3', '0', '0', '0', '0', 'True', 'True', '2017-06-16 17:12:02', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('1', 'cCaption', 'Form Title', '', '4', '0', '0', '0', '0', 'True', 'True', '2017-06-16 17:12:19', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('1', 'bEnabled', 'Enabled', '', '5', '0', '0', '0', '0', 'True', 'True', '2017-06-16 17:12:31', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('1', 'dDate', 'Date', '', '6', '0', '0', '0', '0', 'True', 'True', '2017-06-16 17:12:44', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('1', 'cCustomTpl', 'Template', '', '7', '0', '0', '0', '0', 'True', 'True', '2017-06-16 17:12:58', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('1', 'cRightNode', 'Right', '', '8', '0', '0', '0', '0', 'True', 'True', '2017-06-16 17:13:12', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('1', 'cMemo', 'Memo', '', '9', '0', '0', '0', '0', 'True', 'True', '2017-06-16 17:13:22', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('2', 'id', 'id', '', '1', '0', '0', '0', '0', 'True', 'True', '2017-06-16 17:11:40', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('2', 'tid', 'tid', '', '2', '0', '0', '0', '0', 'True', 'True', '2017-06-16 17:14:03', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('2', 'cDescription', 'Description', '', '3', '0', '0', '0', '0', 'True', 'True', '2017-06-16 17:14:13', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('2', 'cView', 'Table view', '', '4', '0', '0', '0', '0', 'True', 'True', '2017-06-16 17:14:28', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('2', 'cTable', 'table name', '', '5', '0', '0', '0', '0', 'True', 'True', '2017-06-16 17:14:42', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('2', 'iIndex', 'Visible', '', '6', '0', '0', '0', '0', 'True', 'True', '2017-06-16 17:14:47', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('2', 'cTabJson', 'Json', '', '7', '0', '0', '0', '0', 'True', 'True', '2017-06-16 17:15:02', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('3', 'AutoID', 'AutoID', '', '1', '0', '0', '0', '0', 'True', 'True', '2017-06-16 17:15:21', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('3', 'tid', 'tid', '', '2', '0', '0', '0', '0', 'True', 'True', '2017-06-16 17:15:37', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('3', 'cColName', 'Column', '', '3', '0', '0', '0', '0', 'True', 'True', '2017-06-16 17:15:45', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('3', 'cCaption', 'Caption', '', '4', '0', '0', '0', '0', 'True', 'True', '2017-06-17 11:16:31', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('3', 'cUIName', 'UI type', '', '5', '0', '0', '0', '0', 'True', 'True', '2017-06-17 11:16:49', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('3', 'iIndex', 'Index', '', '6', '0', '0', '0', '0', 'True', 'True', '2017-06-17 11:16:57', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('3', 'iWidth', 'Width', '', '7', '0', '0', '0', '0', 'True', 'True', '2017-06-17 11:17:05', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('3', 'iHeight', 'Height', '', '8', '0', '0', '0', '0', 'True', 'True', '2017-06-17 11:17:11', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('3', 'iLeft', 'Left', '', '9', '0', '0', '0', '0', 'True', 'True', '2017-06-17 11:17:21', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('3', 'iTop', 'Top', '', '10', '0', '0', '0', '0', 'True', 'True', '2017-06-17 11:17:29', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('3', 'bVisible', 'Visible', '', '11', '0', '0', '0', '0', 'True', 'True', '2017-06-17 11:17:38', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('3', 'bAuthed', 'Authed', '', '12', '0', '0', '0', '0', 'True', 'True', '2017-06-17 11:17:45', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('3', 'dDate', 'Date', '', '13', '0', '0', '0', '0', 'True', 'True', '2017-06-17 11:17:52', '');
+INSERT jv_defines_cols(tid, cColName, cCaption, cUIName, iIndex, iWidth, iHeight, iLeft, iTop, bVisible, bAuthed, dDate, cColJson)
+  VALUES('3', 'cColJson', 'ColJson', '', '14', '0', '0', '0', '0', 'True', 'True', '2017-06-17 11:17:54', '');
+  
+  
+  
